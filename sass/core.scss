@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+html {
+  font-size: 14px;
+  color: $black; //временно
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.wrap {
+  @include min-max(320px, 100%, 0);
+  background-color: $primary;
+}
+
+.container {
+  @include min-max(320px, 1200px, 12px);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
