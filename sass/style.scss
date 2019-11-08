@@ -6,4 +6,11 @@
 @import "mixins";
 @import "core";
 
-//Шапка сайта
+// Первый экран
+@import "blocks/first-screen.scss";
+@import "blocks/header.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/video.scss";
+
+// Второй экран
+@import "blocks/second-screen.scss";

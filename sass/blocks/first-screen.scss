@@ -1,0 +1,10 @@
+$bg-color: #8a145d;
+
+.first-screen {
+  min-height: 100vh;
+  background-color: $bg-color;
+  background-image: url("../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
