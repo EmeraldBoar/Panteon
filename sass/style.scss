@@ -1,10 +1,9 @@
+// Базовые настройки
 @charset "UTF-8";
 @import "normalize";
 @import "variables";
 @import "fonts";
 @import "mixins";
 @import "core";
-@import "blocks/first-display.scss";
-@import "blocks/main-header.scss";
-@import "blocks/city.scss";
-@import "blocks/main-navigation.scss";
+
+//Шапка сайта

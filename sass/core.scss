@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 html {
-  font-size: 14px;
-  color: $black; //временно
+  font-size: 16px;
+  color: $first-color;
   box-sizing: border-box;
 }
 
@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-  @include min-max(320px, 1200px, 12px);
+  @include min-max(320px, 1170px, 15px);
 }
 
 .visually-hidden {

@@ -20,25 +20,3 @@
     height: 100%;
   }
 }
-
-@mixin button($bg: $button-first-bg, $borderColor: transparent) {
-  font-size: 14px;
-  font-family: $font-second;
-  font-weight: 800;
-  color: $white;
-  text-transform: uppercase;
-  border-radius: 25px;
-  background-color: $bg;
-  cursor: pointer;
-  box-shadow: none;
-  transition-duration: 500ms;
-  transition-property: background-color, border-color;
-  @content;
-
-  &:hover,
-  &:active,
-  &:focus {
-    background-color: darken($bg, 15%);
-    border-color: darken($bg, 15%);
-  }
-}
