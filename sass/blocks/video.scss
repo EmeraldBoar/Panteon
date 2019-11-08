@@ -1,0 +1,67 @@
+$button-color: #e12457;
+$button-play-color: #ffffff;
+$button-text-color: #ffffff;
+$video-text-color: #ffffff;
+
+.video {
+  display: flex;
+}
+
+.video__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 582px;
+  height: 292px;
+  padding-left: 198px;
+  margin: 0 auto;
+  background-image: url("../img/video-bg.png");
+  background-repeat: no-repeat;
+}
+
+.video__button {
+  position: relative;
+  z-index: 1;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  background-color: $button-color;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    top: 50%;
+    margin-top: -7px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 14px solid $button-play-color;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+  }
+
+  &::after {
+    content: "Смотерть видео";
+    position: relative;
+    left: 67px;
+    top: 50%;
+    margin-top: -7px;
+    display: block;
+    width: 119px;
+    font-size: 14px;
+    color: $button-text-color;
+  }
+}
+
+.video__info {
+  z-index: 1;
+  min-width: 128px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+  color: $video-text-color;
+}

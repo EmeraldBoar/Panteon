@@ -1,0 +1,57 @@
+$burger-color: #ffffff;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 37px;
+  margin-bottom: 408px;
+}
+
+.header__navigation {
+  flex-grow: 1;
+}
+
+.header__menu-link {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $white-color;
+  text-decoration: none;
+}
+
+.header__menu-text {
+  display: inline-block;
+  margin-right: 18px;
+}
+
+.header__button {
+  position: relative;
+  width: 47px;
+  height: 2px;
+  padding: 0;
+  background-color: $burger-color;
+  border: none;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: -6px;
+    content: "";
+    width: 29px;
+    height: 2px;
+    background-color: $burger-color;
+  }
+
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    content: "";
+    width: 22px;
+    height: 2px;
+    background-color: $burger-color;
+  }
+}
