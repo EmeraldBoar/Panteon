@@ -2,9 +2,12 @@ $button-color: #e12457;
 $button-play-color: #ffffff;
 $button-text-color: #ffffff;
 $video-text-color: #ffffff;
+$video-line-color: #ff9ebd;
 
 .video {
+  position: relative;
   display: flex;
+  justify-content: center;
 }
 
 .video__wrapper {
@@ -14,9 +17,9 @@ $video-text-color: #ffffff;
   width: 582px;
   height: 292px;
   padding-left: 198px;
-  margin: 0 auto;
   background-image: url("../img/video-bg.png");
   background-repeat: no-repeat;
+  box-shadow: 0px 25px 38px 0px rgba(0, 0, 0, 0.48);
 }
 
 .video__button {
@@ -58,10 +61,25 @@ $video-text-color: #ffffff;
 }
 
 .video__info {
-  z-index: 1;
+  position: absolute;
+  top: 50%;
+  right: 7.9%;
   min-width: 128px;
   margin: 0;
+  margin-top: -30px;
   font-size: 14px;
   font-weight: 300;
   color: $video-text-color;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -142px;
+    width: 118px;
+    height: 2px;
+    margin-right: 30px;
+    background-color: $video-line-color;
+  }
 }

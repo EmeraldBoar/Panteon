@@ -1,4 +1,6 @@
 $bg-color: #8a145d;
+$button-down-color: rgba(225, 36, 87, 0.5);
+$button-line-color: #ffffff;
 
 .first-screen {
   position: relative;
@@ -8,4 +10,13 @@ $bg-color: #8a145d;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.first-screen__button-down {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: none;
+  background-color: $button-down-color;
 }
